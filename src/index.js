@@ -7,13 +7,14 @@
 
 const phpParser = require('php-parser');
 const tokens = require("./tokens");
-
+const lexer = require("./lexer");
 // define the hack engine / entry point
 const engine = function(options) {
   if (!options) {
     options = {};
   }
   options.tokens = tokens;
+  options.lexer = lexer;
   phpParser.apply(this, [options]);
 };
 
