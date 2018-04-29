@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simple syntax tests should pass 1`] = `
+Array [
+  Array [
+    "T_OPEN_TAG",
+    "<?",
+    1,
+  ],
+  Array [
+    "T_STRING",
+    "hh",
+    1,
+  ],
+  Array [
+    "T_WHITESPACE",
+    "
+
+      ",
+    1,
+  ],
+  Array [
+    "T_SL",
+    "<<",
+    3,
+  ],
+  Array [
+    "T_STRING",
+    "__Memoize",
+    3,
+  ],
+  Array [
+    "T_SR",
+    ">>",
+    3,
+  ],
+  Array [
+    "T_WHITESPACE",
+    "
+      ",
+    3,
+  ],
+  Array [
+    "T_FUNCTION",
+    "function",
+    4,
+  ],
+  Array [
+    "T_WHITESPACE",
+    " ",
+    4,
+  ],
+  Array [
+    "T_STRING",
+    "foo",
+    4,
+  ],
+  "(",
+  Array [
+    "T_STRING",
+    "inout",
+    4,
+  ],
+  Array [
+    "T_WHITESPACE",
+    " ",
+    4,
+  ],
+  Array [
+    "T_STRING",
+    "vec",
+    4,
+  ],
+  "<",
+  Array [
+    "T_STRING",
+    "string",
+    4,
+  ],
+  ">",
+  Array [
+    "T_WHITESPACE",
+    " ",
+    4,
+  ],
+  Array [
+    "T_VARIABLE",
+    "$bar",
+    4,
+  ],
+  ")",
+  ":",
+  Array [
+    "T_WHITESPACE",
+    " ",
+    4,
+  ],
+  "{",
+  Array [
+    "T_WHITESPACE",
+    "
+        ",
+    4,
+  ],
+  Array [
+    "T_STRING",
+    "using",
+    5,
+  ],
+  Array [
+    "T_WHITESPACE",
+    " ",
+    5,
+  ],
+  "(",
+  Array [
+    "T_NEW",
+    "new",
+    5,
+  ],
+  Array [
+    "T_WHITESPACE",
+    " ",
+    5,
+  ],
+  Array [
+    "T_STRING",
+    "Baz",
+    5,
+  ],
+  "(",
+  ")",
+  ")",
+  Array [
+    "T_WHITESPACE",
+    " ",
+    5,
+  ],
+  "{",
+  Array [
+    "T_WHITESPACE",
+    "
+        ",
+    5,
+  ],
+  "}",
+  Array [
+    "T_WHITESPACE",
+    "
+      ",
+    6,
+  ],
+  "}",
+  Array [
+    "T_WHITESPACE",
+    "
+    ",
+    7,
+  ],
+]
+`;
