@@ -329,20 +329,15 @@ exports[`simple syntax tests should pass 1`] = `
 Array [
   Array [
     "T_OPEN_TAG",
-    "<?",
-    1,
-  ],
-  Array [
-    "T_STRING",
-    "hh",
+    "<?hh
+",
     1,
   ],
   Array [
     "T_WHITESPACE",
     "
-
       ",
-    1,
+    2,
   ],
   Array [
     "T_SL",
@@ -382,7 +377,7 @@ Array [
   ],
   "(",
   Array [
-    "T_STRING",
+    "T_INOUT",
     "inout",
     4,
   ],
@@ -392,7 +387,7 @@ Array [
     4,
   ],
   Array [
-    "T_STRING",
+    "T_VEC",
     "vec",
     4,
   ],
@@ -428,7 +423,7 @@ Array [
     4,
   ],
   Array [
-    "T_STRING",
+    "T_USING",
     "using",
     5,
   ],

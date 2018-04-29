@@ -4,6 +4,8 @@
  * @url http://glayzzle.com
  */
 "use strict";
+
+// list of hack tokens
 const tokens = require('./tokens');
 
 /**
@@ -31,5 +33,15 @@ const lexer = {
     inout: tokens.names.T_INOUT
   }
 };
+
+
+// extends the lexer with states
+[
+  require("./lexer/initial.js")
+].forEach(function(ext) {
+  for (const k in ext) {
+    lexer[k] = ext[k];
+  }
+});
 
 module.exports = lexer;
