@@ -28,7 +28,7 @@ console.log(
 
 This will output :
 
-```json
+```js
 Program {
   "children": Array [
     _Function {
@@ -87,7 +87,7 @@ Program {
 - [ ] Define new AST nodes
 - [ ] Implement the new grammar
 
-** Disclaimer ** : This is a work in progress
+**Disclaimer** : This is a work in progress
 
 # Misc
 
