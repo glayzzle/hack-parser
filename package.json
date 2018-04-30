@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/glayzzle/hack-parser#readme",
   "dependencies": {
-    "php-parser": "^3.0.0-alpha2"
+    "php-parser": "https://github.com/glayzzle/php-parser.git#64e7449bc5ce3a0f4e8310a68cbedaa1b13d69bf"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
