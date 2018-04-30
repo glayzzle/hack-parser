@@ -1,12 +1,8 @@
 const parser = require('../../src/index');
 
 describe('simple syntax tests', function() {
-  it('extend tokens', function() {
-    const instance = new parser();
-    expect(instance.tokens).toMatchSnapshot();
-  });
-  it('lexer should pass', function() {
-    expect(parser.tokenGetAll(`<?hh
+  it('parser should pass', function() {
+    expect(parser.parseCode(`<?hh
 
       <<__Memoize>>
       function foo(inout vec<string> $bar): {
@@ -15,4 +11,5 @@ describe('simple syntax tests', function() {
       }
     `)).toMatchSnapshot();
   });
+
 });

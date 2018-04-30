@@ -1,0 +1,660 @@
+{
+  "parse_tree": {
+    "kind": "script",
+    "script_declarations": {
+      "kind": "list",
+      "elements": [
+        {
+          "kind": "markup_section",
+          "markup_prefix": {
+            "kind": "missing"
+          },
+          "markup_text": {
+            "kind": "token",
+            "token": {
+              "kind": "markup",
+              "text": "",
+              "offset": 0,
+              "leading_width": 0,
+              "width": 0,
+              "trailing_width": 0,
+              "leading": [],
+              "trailing": [],
+              "line_number": 1
+            }
+          },
+          "markup_suffix": {
+            "kind": "markup_suffix",
+            "markup_suffix_less_than_question": {
+              "kind": "token",
+              "token": {
+                "kind": "<?",
+                "text": "<?",
+                "offset": 0,
+                "leading_width": 0,
+                "width": 2,
+                "trailing_width": 0,
+                "leading": [],
+                "trailing": [],
+                "line_number": 1
+              }
+            },
+            "markup_suffix_name": {
+              "kind": "token",
+              "token": {
+                "kind": "name",
+                "text": "hh",
+                "offset": 2,
+                "leading_width": 0,
+                "width": 2,
+                "trailing_width": 1,
+                "leading": [],
+                "trailing": [
+                  {
+                    "kind": "end_of_line",
+                    "text": "\n",
+                    "offset": 4,
+                    "width": 1
+                  }
+                ],
+                "line_number": 1
+              }
+            }
+          },
+          "markup_expression": {
+            "kind": "missing"
+          }
+        },
+        {
+          "kind": "function_declaration",
+          "function_attribute_spec": {
+            "kind": "attribute_specification",
+            "attribute_specification_left_double_angle": {
+              "kind": "token",
+              "token": {
+                "kind": "<<",
+                "text": "<<",
+                "offset": 5,
+                "leading_width": 2,
+                "width": 2,
+                "trailing_width": 0,
+                "leading": [
+                  {
+                    "kind": "whitespace",
+                    "text": "  ",
+                    "offset": 5,
+                    "width": 2
+                  }
+                ],
+                "trailing": [],
+                "line_number": 2
+              }
+            },
+            "attribute_specification_attributes": {
+              "kind": "list",
+              "elements": [
+                {
+                  "kind": "list_item",
+                  "list_item": {
+                    "kind": "attribute",
+                    "attribute_name": {
+                      "kind": "token",
+                      "token": {
+                        "kind": "name",
+                        "text": "__Memoize",
+                        "offset": 9,
+                        "leading_width": 0,
+                        "width": 9,
+                        "trailing_width": 0,
+                        "leading": [],
+                        "trailing": [],
+                        "line_number": 2
+                      }
+                    },
+                    "attribute_left_paren": {
+                      "kind": "missing"
+                    },
+                    "attribute_values": {
+                      "kind": "missing"
+                    },
+                    "attribute_right_paren": {
+                      "kind": "missing"
+                    }
+                  },
+                  "list_separator": {
+                    "kind": "missing"
+                  }
+                }
+              ]
+            },
+            "attribute_specification_right_double_angle": {
+              "kind": "token",
+              "token": {
+                "kind": ">>",
+                "text": ">>",
+                "offset": 18,
+                "leading_width": 0,
+                "width": 2,
+                "trailing_width": 1,
+                "leading": [],
+                "trailing": [
+                  {
+                    "kind": "end_of_line",
+                    "text": "\n",
+                    "offset": 20,
+                    "width": 1
+                  }
+                ],
+                "line_number": 2
+              }
+            }
+          },
+          "function_declaration_header": {
+            "kind": "function_declaration_header",
+            "function_modifiers": {
+              "kind": "missing"
+            },
+            "function_keyword": {
+              "kind": "token",
+              "token": {
+                "kind": "function",
+                "text": "function",
+                "offset": 21,
+                "leading_width": 2,
+                "width": 8,
+                "trailing_width": 1,
+                "leading": [
+                  {
+                    "kind": "whitespace",
+                    "text": "  ",
+                    "offset": 21,
+                    "width": 2
+                  }
+                ],
+                "trailing": [
+                  {
+                    "kind": "whitespace",
+                    "text": " ",
+                    "offset": 31,
+                    "width": 1
+                  }
+                ],
+                "line_number": 3
+              }
+            },
+            "function_ampersand": {
+              "kind": "missing"
+            },
+            "function_name": {
+              "kind": "token",
+              "token": {
+                "kind": "name",
+                "text": "foo",
+                "offset": 32,
+                "leading_width": 0,
+                "width": 3,
+                "trailing_width": 0,
+                "leading": [],
+                "trailing": [],
+                "line_number": 3
+              }
+            },
+            "function_type_parameter_list": {
+              "kind": "missing"
+            },
+            "function_left_paren": {
+              "kind": "token",
+              "token": {
+                "kind": "(",
+                "text": "(",
+                "offset": 35,
+                "leading_width": 0,
+                "width": 1,
+                "trailing_width": 0,
+                "leading": [],
+                "trailing": [],
+                "line_number": 3
+              }
+            },
+            "function_parameter_list": {
+              "kind": "list",
+              "elements": [
+                {
+                  "kind": "list_item",
+                  "list_item": {
+                    "kind": "parameter_declaration",
+                    "parameter_attribute": {
+                      "kind": "missing"
+                    },
+                    "parameter_visibility": {
+                      "kind": "missing"
+                    },
+                    "parameter_call_convention": {
+                      "kind": "token",
+                      "token": {
+                        "kind": "inout",
+                        "text": "inout",
+                        "offset": 36,
+                        "leading_width": 0,
+                        "width": 5,
+                        "trailing_width": 1,
+                        "leading": [],
+                        "trailing": [
+                          {
+                            "kind": "whitespace",
+                            "text": " ",
+                            "offset": 41,
+                            "width": 1
+                          }
+                        ],
+                        "line_number": 3
+                      }
+                    },
+                    "parameter_type": {
+                      "kind": "vector_type_specifier",
+                      "vector_type_keyword": {
+                        "kind": "token",
+                        "token": {
+                          "kind": "vec",
+                          "text": "vec",
+                          "offset": 42,
+                          "leading_width": 0,
+                          "width": 3,
+                          "trailing_width": 0,
+                          "leading": [],
+                          "trailing": [],
+                          "line_number": 3
+                        }
+                      },
+                      "vector_type_left_angle": {
+                        "kind": "token",
+                        "token": {
+                          "kind": "<",
+                          "text": "<",
+                          "offset": 45,
+                          "leading_width": 0,
+                          "width": 1,
+                          "trailing_width": 0,
+                          "leading": [],
+                          "trailing": [],
+                          "line_number": 3
+                        }
+                      },
+                      "vector_type_type": {
+                        "kind": "simple_type_specifier",
+                        "simple_type_specifier": {
+                          "kind": "token",
+                          "token": {
+                            "kind": "string",
+                            "text": "string",
+                            "offset": 46,
+                            "leading_width": 0,
+                            "width": 6,
+                            "trailing_width": 0,
+                            "leading": [],
+                            "trailing": [],
+                            "line_number": 3
+                          }
+                        }
+                      },
+                      "vector_type_trailing_comma": {
+                        "kind": "missing"
+                      },
+                      "vector_type_right_angle": {
+                        "kind": "token",
+                        "token": {
+                          "kind": ">",
+                          "text": ">",
+                          "offset": 52,
+                          "leading_width": 0,
+                          "width": 1,
+                          "trailing_width": 1,
+                          "leading": [],
+                          "trailing": [
+                            {
+                              "kind": "whitespace",
+                              "text": " ",
+                              "offset": 53,
+                              "width": 1
+                            }
+                          ],
+                          "line_number": 3
+                        }
+                      }
+                    },
+                    "parameter_name": {
+                      "kind": "token",
+                      "token": {
+                        "kind": "variable",
+                        "text": "$bar",
+                        "offset": 54,
+                        "leading_width": 0,
+                        "width": 4,
+                        "trailing_width": 0,
+                        "leading": [],
+                        "trailing": [],
+                        "line_number": 3
+                      }
+                    },
+                    "parameter_default_value": {
+                      "kind": "missing"
+                    }
+                  },
+                  "list_separator": {
+                    "kind": "missing"
+                  }
+                }
+              ]
+            },
+            "function_right_paren": {
+              "kind": "token",
+              "token": {
+                "kind": ")",
+                "text": ")",
+                "offset": 58,
+                "leading_width": 0,
+                "width": 1,
+                "trailing_width": 0,
+                "leading": [],
+                "trailing": [],
+                "line_number": 3
+              }
+            },
+            "function_colon": {
+              "kind": "token",
+              "token": {
+                "kind": ":",
+                "text": ":",
+                "offset": 59,
+                "leading_width": 0,
+                "width": 1,
+                "trailing_width": 1,
+                "leading": [],
+                "trailing": [
+                  {
+                    "kind": "whitespace",
+                    "text": " ",
+                    "offset": 60,
+                    "width": 1
+                  }
+                ],
+                "line_number": 3
+              }
+            },
+            "function_type": {
+              "kind": "error",
+              "error_error": {
+                "kind": "token",
+                "token": {
+                  "kind": "{",
+                  "text": "{",
+                  "offset": 61,
+                  "leading_width": 0,
+                  "width": 1,
+                  "trailing_width": 1,
+                  "leading": [],
+                  "trailing": [
+                    {
+                      "kind": "end_of_line",
+                      "text": "\n",
+                      "offset": 62,
+                      "width": 1
+                    }
+                  ],
+                  "line_number": 3
+                }
+              }
+            },
+            "function_where_clause": {
+              "kind": "missing"
+            }
+          },
+          "function_body": {
+            "kind": "compound_statement",
+            "compound_left_brace": {
+              "kind": "missing"
+            },
+            "compound_statements": {
+              "kind": "list",
+              "elements": [
+                {
+                  "kind": "using_statement_block_scoped",
+                  "using_block_await_keyword": {
+                    "kind": "missing"
+                  },
+                  "using_block_using_keyword": {
+                    "kind": "token",
+                    "token": {
+                      "kind": "using",
+                      "text": "using",
+                      "offset": 63,
+                      "leading_width": 4,
+                      "width": 5,
+                      "trailing_width": 1,
+                      "leading": [
+                        {
+                          "kind": "whitespace",
+                          "text": "    ",
+                          "offset": 63,
+                          "width": 4
+                        }
+                      ],
+                      "trailing": [
+                        {
+                          "kind": "whitespace",
+                          "text": " ",
+                          "offset": 72,
+                          "width": 1
+                        }
+                      ],
+                      "line_number": 4
+                    }
+                  },
+                  "using_block_left_paren": {
+                    "kind": "token",
+                    "token": {
+                      "kind": "(",
+                      "text": "(",
+                      "offset": 73,
+                      "leading_width": 0,
+                      "width": 1,
+                      "trailing_width": 0,
+                      "leading": [],
+                      "trailing": [],
+                      "line_number": 4
+                    }
+                  },
+                  "using_block_expressions": {
+                    "kind": "list",
+                    "elements": [
+                      {
+                        "kind": "list_item",
+                        "list_item": {
+                          "kind": "object_creation_expression",
+                          "object_creation_new_keyword": {
+                            "kind": "token",
+                            "token": {
+                              "kind": "new",
+                              "text": "new",
+                              "offset": 74,
+                              "leading_width": 0,
+                              "width": 3,
+                              "trailing_width": 1,
+                              "leading": [],
+                              "trailing": [
+                                {
+                                  "kind": "whitespace",
+                                  "text": " ",
+                                  "offset": 77,
+                                  "width": 1
+                                }
+                              ],
+                              "line_number": 4
+                            }
+                          },
+                          "object_creation_object": {
+                            "kind": "constructor_call",
+                            "constructor_call_type": {
+                              "kind": "simple_type_specifier",
+                              "simple_type_specifier": {
+                                "kind": "token",
+                                "token": {
+                                  "kind": "name",
+                                  "text": "Baz",
+                                  "offset": 78,
+                                  "leading_width": 0,
+                                  "width": 3,
+                                  "trailing_width": 0,
+                                  "leading": [],
+                                  "trailing": [],
+                                  "line_number": 4
+                                }
+                              }
+                            },
+                            "constructor_call_left_paren": {
+                              "kind": "token",
+                              "token": {
+                                "kind": "(",
+                                "text": "(",
+                                "offset": 81,
+                                "leading_width": 0,
+                                "width": 1,
+                                "trailing_width": 0,
+                                "leading": [],
+                                "trailing": [],
+                                "line_number": 4
+                              }
+                            },
+                            "constructor_call_argument_list": {
+                              "kind": "missing"
+                            },
+                            "constructor_call_right_paren": {
+                              "kind": "token",
+                              "token": {
+                                "kind": ")",
+                                "text": ")",
+                                "offset": 82,
+                                "leading_width": 0,
+                                "width": 1,
+                                "trailing_width": 0,
+                                "leading": [],
+                                "trailing": [],
+                                "line_number": 4
+                              }
+                            }
+                          }
+                        },
+                        "list_separator": {
+                          "kind": "missing"
+                        }
+                      }
+                    ]
+                  },
+                  "using_block_right_paren": {
+                    "kind": "token",
+                    "token": {
+                      "kind": ")",
+                      "text": ")",
+                      "offset": 83,
+                      "leading_width": 0,
+                      "width": 1,
+                      "trailing_width": 1,
+                      "leading": [],
+                      "trailing": [
+                        {
+                          "kind": "whitespace",
+                          "text": " ",
+                          "offset": 84,
+                          "width": 1
+                        }
+                      ],
+                      "line_number": 4
+                    }
+                  },
+                  "using_block_body": {
+                    "kind": "compound_statement",
+                    "compound_left_brace": {
+                      "kind": "token",
+                      "token": {
+                        "kind": "{",
+                        "text": "{",
+                        "offset": 85,
+                        "leading_width": 0,
+                        "width": 1,
+                        "trailing_width": 1,
+                        "leading": [],
+                        "trailing": [
+                          {
+                            "kind": "end_of_line",
+                            "text": "\n",
+                            "offset": 86,
+                            "width": 1
+                          }
+                        ],
+                        "line_number": 4
+                      }
+                    },
+                    "compound_statements": {
+                      "kind": "missing"
+                    },
+                    "compound_right_brace": {
+                      "kind": "token",
+                      "token": {
+                        "kind": "}",
+                        "text": "}",
+                        "offset": 87,
+                        "leading_width": 4,
+                        "width": 1,
+                        "trailing_width": 1,
+                        "leading": [
+                          {
+                            "kind": "whitespace",
+                            "text": "    ",
+                            "offset": 87,
+                            "width": 4
+                          }
+                        ],
+                        "trailing": [
+                          {
+                            "kind": "end_of_line",
+                            "text": "\n",
+                            "offset": 92,
+                            "width": 1
+                          }
+                        ],
+                        "line_number": 5
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "compound_right_brace": {
+              "kind": "token",
+              "token": {
+                "kind": "}",
+                "text": "}",
+                "offset": 93,
+                "leading_width": 2,
+                "width": 1,
+                "trailing_width": 0,
+                "leading": [
+                  {
+                    "kind": "whitespace",
+                    "text": "  ",
+                    "offset": 93,
+                    "width": 2
+                  }
+                ],
+                "trailing": [],
+                "line_number": 6
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "program_text": "<?hh\n  <<__Memoize>>\n  function foo(inout vec<string> $bar): {\n    using (new Baz()) {\n    }\n  }",
+  "version": "2018-02-20-0001"
+}

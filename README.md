@@ -3,10 +3,15 @@
 > JS Hack/HHVMParser - extract AST and tokens
 
 [![Coverage Status](https://coveralls.io/repos/github/glayzzle/hack-parser/badge.svg?branch=master)](https://coveralls.io/github/glayzzle/hack-parser?branch=master)
-
 [![Build Status](https://travis-ci.org/glayzzle/hack-parser.svg?branch=master)](https://travis-ci.org/glayzzle/hack-parser)
 
-----
+---
+
+# Roadmap for first release
+
+- [ ] Implement all tokens (introduced 43 new tokens)
+- [ ] Define new AST nodes
+- [ ] Implement the new grammar
 
 # Misc
 

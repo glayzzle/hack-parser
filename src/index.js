@@ -8,14 +8,26 @@
 const phpParser = require('php-parser');
 const tokens = require("./tokens");
 const lexer = require("./lexer");
+const parser = require("./parser");
+const AST = require("./ast");
+
 // define the hack engine / entry point
 const engine = function(options) {
   if (!options) {
     options = {};
   }
-  options.tokens = tokens;
-  options.lexer = lexer;
-  phpParser.apply(this, [options]);
+  const override = {
+    tokens: tokens,
+    lexer: lexer,
+    parser: parser,
+    ast: AST
+  };
+  phpParser.combine(options, override);
+  phpParser.apply(this, [override]);
+  // revert bound functions
+  for(var k in AST) {
+    this.ast[k] = AST[k];
+  }
 };
 
 // extends from PHP parser
@@ -47,32 +59,13 @@ engine.parseCode = function(buffer, filename, options) {
 };
 
 /**
- * Function that parse a php code with open/close tags
- *
- * Sample code :
- * ```php
- * <?php $x = 1;
- * ```
- *
- * Usage :
- * ```js
- * var parser = require('php-parser');
- * var phpParser = new parser({
- *   // some options
- * });
- * var ast = phpParser.parseCode('...php code...', 'foo.php');
- * ```
- * @param {String} buffer - The code to be parsed
- * @param {String} filename - Filename
- * @return {Program}
+ * Evaluate the buffer
+ * @private
  */
-engine.prototype.parseCode = function(buffer, filename) {
-  this.lexer.mode_eval = false;
-  this.lexer.all_tokens = false;
-  buffer = getStringBuffer(buffer);
-  return this.parser.parse(buffer, filename);
+engine.parseEval = function(buffer, options) {
+  const self = new engine(options);
+  return self.parseEval(buffer);
 };
-
 
 /**
  * Creates a new instance (Helper)

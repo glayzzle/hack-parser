@@ -5,7 +5,6 @@
  */
 "use strict";
 
-const lexer = require('php-parser').lexer;
 module.exports = {
   matchINITIAL: function() {
     while (this.offset < this.size) {
