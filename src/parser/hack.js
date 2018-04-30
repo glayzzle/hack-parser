@@ -33,6 +33,17 @@ module.exports = {
   },
 
   /**
+   * Checks if inout keyword is used
+   */
+  is_inout: function() {
+    if (this.token === this.tok.T_INOUT) {
+      this.next();
+      return true;
+    }
+    return false;
+  },
+
+  /**
    * <ebnf>
    * non_empty_user_attributes ::= T_SL user_attribute_list T_SR
    * </ebnf>
@@ -96,5 +107,9 @@ module.exports = {
   read_static_scalar_ae: function() {
     // @fixme : not yet implement / just a POC
     return this.read_scalar();
+  },
+
+  read_hh_type: function() {
+    
   }
 };

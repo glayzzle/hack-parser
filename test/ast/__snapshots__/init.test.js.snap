@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simple syntax tests parser should pass 1`] = `
+Program {
+  "children": Array [
+    _Function {
+      "arguments": Array [
+        Parameter {
+          "byref": false,
+          "inout": true,
+          "kind": "parameter",
+          "modifiers": null,
+          "name": "bar",
+          "nullable": false,
+          "type": Identifier {
+            "arguments": Array [
+              Identifier {
+                "kind": "identifier",
+                "name": "string",
+                "resolution": "uqn",
+              },
+            ],
+            "kind": "identifier",
+            "name": "vec",
+            "resolution": "rn",
+          },
+          "value": null,
+          "variadic": false,
+        },
+      ],
+      "attributes": Array [
+        Attribute_Spec {
+          "args": null,
+          "kind": "attribute_spec",
+          "name": "__Memoize",
+        },
+      ],
+      "body": Block {
+        "children": Array [],
+        "kind": "block",
+      },
+      "byref": false,
+      "kind": "function",
+      "name": "foo",
+      "nullable": false,
+      "type": null,
+    },
+  ],
+  "errors": Array [],
+  "kind": "program",
+}
+`;

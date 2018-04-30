@@ -6,8 +6,8 @@ describe('simple syntax tests', function() {
 
       <<__Memoize>>
       function foo(inout vec<string> $bar): {
-        using (new Baz()) {
-        }
+        /*using (new Baz()) {
+        }*/
       }
     `)).toMatchSnapshot();
   });
